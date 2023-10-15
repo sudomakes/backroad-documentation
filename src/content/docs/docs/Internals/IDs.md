@@ -14,5 +14,5 @@ const num2 = br.numberInput({ defaultValue: 5 });
 
 // Correct usage
 const num1 = br.numberInput({ id: "num-1", defaultValue: 5 });
-const num2 = br.numberInput({ id: "num-1", defaultValue: 5 });
+const num2 = br.numberInput({ id: "num-2", defaultValue: 5 });
 ```
