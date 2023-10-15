@@ -1,0 +1,22 @@
+---
+title: Layout and Containers
+description: A collection of containers which you can use to organise your components.
+sidebar:
+  order: 6
+---
+
+import { CodePlayground } from "@components/docs/code-playground.tsx";
+
+In the example below, you will see an illustration of the various kinds of containers supported in backroad. More components and containers can be added to a container
+
+<CodePlayground client:only="react" id="stackblitz-starters-yersqk" />
+
+`base` returns a normal container, but it can be used to do out of order renders.
+
+```js
+const base = br.base({});
+br.write({ body: "This is rendered further in the tree" });
+base.write({
+  body: "This renders before the other component even though its called later, because base container got initialised beforehand",
+});
+```

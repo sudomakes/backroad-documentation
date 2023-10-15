@@ -1,0 +1,17 @@
+---
+// src/components/ConditionalFooter.astro
+import type { Props } from "@astrojs/starlight/props";
+import Default from "@astrojs/starlight/components/PageTitle.astro";
+
+const isHomepage = Astro.props.slug === "";
+---
+
+{
+  isHomepage ? (
+    <div />
+  ) : (
+    <Default {...Astro.props}>
+      <slot />
+    </Default>
+  )
+}
