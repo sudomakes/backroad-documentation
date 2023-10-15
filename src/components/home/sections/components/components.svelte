@@ -38,7 +38,7 @@
         class="row-span-1 lg: col-span-3 row-start-4 col-start-1"
       />
       <ComponentExample
-        code={`br.chatMessage({name: msg.by}).write({body:msg.body})\nbr.chatInput({})`}
+        code={`br.chatMessage({name: msg.by}).write({body:msg.body})`}
         image={llm}
         alt="llm"
         class="row-span-3 col-span-4 col-start-1 row-start-1"

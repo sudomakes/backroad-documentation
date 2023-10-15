@@ -50,12 +50,11 @@ if (dogPerson) {
         <div class="camera" />
         <div class="display">
           <div
-            class="artboard pt-10 px-4 phone-1 bg-neutral relative flex flex-col gap-3"
+            class="artboard pt-10 px-4 phone-1 bg-neutral text-neutral-content relative flex flex-col gap-3"
           >
             <div class="form-control">
               <label class="cursor-pointer label">
-                <span class="label-text font-medium">Are you a Dog Person?</span
-                >
+                <span class="font-medium">Are you a Dog Person?</span>
                 <input
                   type="checkbox"
                   class="toggle toggle-primary"

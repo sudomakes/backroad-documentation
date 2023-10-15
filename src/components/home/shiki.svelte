@@ -15,13 +15,13 @@
     theme: "dracula",
     lineOptions: highlightLines.map((lineToHighlight) => ({
       line: lineToHighlight,
-      classes: ["bg-neutral"],
+      classes: ["bg-accent"],
     })),
   });
 </script>
 
 <div
-  class={`mockup-window bg-[#282a36] max-h-[50vh] border-4 ${$$restProps.class}`}
+  class={`mockup-window bg-[#282a36] max-h-[50vh] overflow-auto border-4 ${$$restProps.class}`}
 >
   <div class="p-4">
     {@html html || code}

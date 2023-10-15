@@ -1,6 +1,6 @@
 <script lang="ts">
-  import Youtube from "svelte-youtube-embed";
-  import Annotation from "@assets/home-page/intro/annotation.svg";
+  // import Youtube from "svelte-youtube-embed";
+  // import Annotation from "@assets/home-page/intro/annotation.svg";
 </script>
 
 <div class="container relative my-20">
@@ -12,9 +12,9 @@
         class="h-10 w-10 lg:h-20 lg:w-20 mr-4 rounded-full"
         alt="sudo-vaibhav"
       />
-      <div class="hidden lg:relative w-10 mt-10 left-[-150px]">
+      <!-- <div class="hidden lg:relative w-10 mt-10 left-[-150px]">
         <img src={Annotation.src} alt="learn backroad in just 3 minutes" />
-      </div>
+      </div> -->
     </div>
     <div class="text-justify">
       <span class="font-medium">Hi, I'm Vaibhav, creator of Backroad 👋</span>
@@ -33,5 +33,18 @@
       </p>
     </div>
   </div>
-  <Youtube id="dQw4w9WgXcQ" />
+  <div class="flex-col flex lg:flex-row items-center justify-center gap-3">
+    <a
+      class="btn btn-primary w-full lg:w-auto"
+      target="_blank"
+      href="https://github.com/sudomakes/trybackroad">Try Backroad Starter</a
+    >
+    <a
+      class="btn btn-outline w-full lg:w-auto btn-primary"
+      target="_blank"
+      href="https://stackblitz.com/@sudo-vaibhav/collections/backroad"
+      >See Examples</a
+    >
+  </div>
+  <!-- <Youtube id="dQw4w9WgXcQ" /> -->
 </div>

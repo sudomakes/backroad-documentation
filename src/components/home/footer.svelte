@@ -1,4 +1,4 @@
-<footer class="bg-secondary p-4 mt-4 text-secondary-content">
+<footer class="bg-accent p-4 mt-4 text-accent-content">
   <div class="container flex items-center gap-4">
     <div>
       <img
