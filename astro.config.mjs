@@ -11,6 +11,26 @@ export default defineConfig({
   integrations: [
     // tailwind(),
     starlight({
+      head: [
+        {
+          // <meta property="og:image" content="https://example.com/images/image.jpg">
+
+          tag: "meta",
+          attrs: {
+            property: "og:image",
+            content: "/meta-image.png",
+          },
+        },
+        {
+          // <meta property="og:image" content="https://example.com/images/image.jpg">
+
+          tag: "meta",
+          attrs: {
+            property: "twitter:image",
+            content: "/meta-image.png",
+          },
+        },
+      ],
       title: "Backroad",
       tableOfContents: false,
       social: {
