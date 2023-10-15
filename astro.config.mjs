@@ -30,6 +30,21 @@ export default defineConfig({
             content: "/meta-image.png",
           },
         },
+        {
+          tag: "script",
+          attrs: {
+            async: true,
+            src: "https://www.googletagmanager.com/gtag/js?id=G-6GJXBWMVYT",
+          },
+        },
+        {
+          tag: "script",
+          content: `window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-6GJXBWMVYT');`,
+        },
       ],
       title: "Backroad",
       tableOfContents: false,
