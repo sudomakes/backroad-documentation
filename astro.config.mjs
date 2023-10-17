@@ -79,6 +79,7 @@ gtag('config', 'G-6GJXBWMVYT');`,
         "./src/tailwind.css",
       ],
       sidebar: [
+        { label: "Quickstart", autogenerate: { directory: "docs/Quickstart" } },
         {
           label: "Fundamentals",
           autogenerate: { directory: "docs/Fundamentals" },
