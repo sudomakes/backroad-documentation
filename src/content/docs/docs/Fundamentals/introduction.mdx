@@ -1,0 +1,14 @@
+---
+title: Introduction
+description: A quick overview of how components and containers work in backroad
+sidebar:
+  order: 1
+---
+
+A very fundamental part of backroad sdk is components and containers. They do exactly what the name suggests. Containers act as "bucket elements" which contain other components (or more containers) as their children. While components on the other hand act as "leaf-level elements" and can't have further children but have associated values instead. In this section we will explore both components and containers in more detail. Here is a basic example which uses both components and containers.
+
+import { CodePlayground } from "../../../../components/docs/code-playground.tsx";
+
+<CodePlayground client:only="react" id="stackblitz-starters-omj9bh" />
+
+Here `col1` and `col2` are containers which contain components like `numberInput` and `markdown (write)`, respectively.

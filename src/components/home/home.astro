@@ -1,0 +1,39 @@
+---
+import Footer from "@components/home/footer.svelte";
+import Hero from "@components/home/hero.svelte";
+import UseCases from "@components/home/use-cases.svelte";
+import Ecosystem from "./sections/ecosystem/ecosystem.svelte";
+import Components from "./sections/components/components.svelte";
+import FollowTheScript from "./sections/follow-the-script.svelte";
+import Intro from "./intro.svelte";
+import SignUp from "./sections/sign-up.astro";
+---
+
+<div class="no-content">
+  <Hero client:load />
+  <UseCases client:load />
+  <Intro client:idle />
+  <FollowTheScript client:visible />
+  <Components />
+  <Ecosystem />
+
+  <!-- <iframe
+    width="100%"
+    height="500px"
+    src="https://6bf2c175.sibforms.com/serve/MUIFAMyqgN7xhktwrN4V8ZWt8Xs2UCgj2XlkZwBRdEBeBXYjwvqQaGduWfW7JAHz-MCOfyFa3aP8Gvu1Zu39pguzPkTAfh3guh25BmXaYeeZNWrFvNMxzessgJ1bLIY7ut7-bWqGt-5FbNFIJvP93WDxbscohyHwSHHNX9-9vDUJNm0_mq1qRw_AiMicUzUHn6KyLqLDwrLO3oEc"
+    frameborder="0"
+    scrolling="auto"
+    allowfullscreen
+    style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"
+  ></iframe> -->
+  <!-- <iframe
+    width="100%"
+    src="https://6bf2c175.sibforms.com/serve/MUIFAJq1EZRYCgBQqfqXHUVC48niRItF_slfzzmhWj_yr00ac09cimMRqKlqQ3sLEtDFWVE_AluDDnk03WYkLZ7R0l1XmphqdVdGSyhr79_vsS9B0kEceENVEijUk26Q3m2n41XCbeF5vdF6P7BT1n6ctdvGBV87yKxrnsMUcimMOU_H_G60KhhEcQ83iFtD7mGOQ9LPVr0Z8LcD"
+    frameborder="0"
+    scrolling="auto"
+    allowfullscreen
+    style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"
+  ></iframe> -->
+  <SignUp />
+  <Footer />
+</div>

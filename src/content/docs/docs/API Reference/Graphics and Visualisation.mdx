@@ -1,0 +1,17 @@
+---
+title: Graphics and Visualisation
+description: Components for rendering charts and graphics
+sidebar:
+  order: 1
+---
+
+Backroad supports several types of charts which can be readily rendered by just a call to the backroad object.
+
+import { CodePlayground } from "@components/docs/code-playground.tsx";
+import { FunctionDocumentationTable } from "@components/docs/function-documentation-table.tsx";
+
+<CodePlayground client:only="react" id="stackblitz-starters-vk3mzh" />
+
+:::tip[Note]
+Most of the visualistion components are thin-wrappers around [react-chartjs-2](https://react-chartjs-2.js.org/) and therefore expect input to be in the same shape as that of the react-chartjs-2 docs. However backroad does try to give a relatively less verbose way of passing data, by using plugins like autocolorizer which can allow you to focus only on passing the data, instead of having to worry about styling the chart.
+:::

@@ -1,0 +1,26 @@
+---
+title: Metadata and SEO
+description: Add title and meta tags to pages
+sidebar:
+  order: 9
+---
+
+import { CodePlayground } from "@components/docs/code-playground.tsx";
+
+Backroad provides functions to set title of the page. We are working on providing the ability to also set meta tags, favicons, etc.
+
+```js
+import { run } from "@backroad/backroad";
+
+run((br) => {
+  // by default title of home page is set
+  br.title({ label: "Home Page" });
+  const page2 = br
+    .page({
+      path: "/page-2",
+    })
+    .write({ body: "page-2" });
+  // to set title of other pages, call title function on other page containers
+  page2.title({ label: "Page 2" });
+});
+```
